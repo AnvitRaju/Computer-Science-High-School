@@ -32,7 +32,7 @@ String name = keyboard.nextLine();
 System.out.println("");
 System.out.println("Hi " + name + "." + " You are in a critical situation.");//how do you do that thing where the lines automatically adjusts in answer
 System.out.println("You have gone for a regular check-up today, and hear that your doctor");
-System.out.println("is trying to kill you. They don't know that you figured out their plan.");
+System.out.println("is trying to attack you. They don't know that you figured out their plan.");
 System.out.println("You have exactly 20 minutes to escape the hospital before the doctor enters.");
 System.out.println("You are currently at the hospital, and you have to look around for clues.");
 System.out.println("You can note down things in your notebook anytime during the game.");
