@@ -74,14 +74,14 @@ System.out.println("Make sure to visit every place in the location. There could 
 System.out.println("Alright, lets begin the adventure! You are at the entrance.");
 System.out.println("");
 
-String location = "entrance"
+String location = "entrance";
 boolean won = false;
 
 System.out.println("You see two posters of the founders of the hospital. Would you like to know about them?");
 
-notebook[NoteSize] = "Picture of Blake Tilton in a background color of red"
+notebook[NoteSize] = "Picture of Blake Tilton in a background color of red";
 NoteSize++;
-notebook[NoteSize] = "Picture of John Blue"
+notebook[NoteSize] = "Picture of John Blue";
 NoteSize++;
 
 while ("entrance".equals(location)) {
@@ -117,9 +117,9 @@ System.out.println("To get there, go to the bottom floor, and enter room #1.");
 } else if ("search the bottom floor".equalsIgnoreCase(entrance) || "bottom floor".equalsIgnoreCase(entrance) || "search bottom floor".equalsIgnoreCase(entrance)) {
 System.out.println("You are at the bottom floor.");
 System.out.println("Hurry up, you will be late for your appointment. Go to room 1.");
-location = "bottom floor"
+location = "bottom floor";
 } else if ("go to room 1".equalsIgnoreCase(entrance) || "room1".equalsIgnoreCase(entrance) || "room 1".equalsIgnoreCase(entrance)) {
-location = "room 1"
+location = "room 1";
 }
 
 }
@@ -135,7 +135,7 @@ while ("bottom floor".equals(location)) {
 String bottomfloor = keyboard.nextLine();
 
 if (bottomfloor.equals("room 1")) {
-location = "room 1"
+location = "room 1";
 }
 
 }
@@ -159,7 +159,7 @@ notebook();
 inventory();
 } else if ("go forward".equalsIgnoreCase(room1) || "forward".equalsIgnoreCase(room1)) {
 System.out.println("You are going back to the waiting room. You have already been there.");//problem with locations
-location = "entrance"
+location = "entrance";
 } else if ("go left".equalsIgnoreCase(room1) || "left".equalsIgnoreCase(room1)) {
 System.out.println("You are now headed towards hallway #2. There are a bunch of waiting rooms to the right and left of you.");
 System.out.println("You might want to go visit another room to search for items. ");
@@ -168,11 +168,11 @@ System.out.println("Do you still wish to go down the hall?");//copy all the same
 String room1g = keyboard.nextLine();
 
 if ("yes".equalsIgnoreCase(room1g) || "y".equalsIgnoreCase(room1g)) {
-location = "hallway 2"
+location = "hallway 2";
 } else if ("no".equalsIgnoreCase(room1g) || "n".equalsIgnoreCase(room1g)) {
 System.out.println("You are headed back to room 1.");
 System.out.println("Where would you like to go now?");
-location = "room 1"
+location = "room 1";
 }
 
 } else if ("go right".equalsIgnoreCase(room1) || "right".equalsIgnoreCase(room1)) {
@@ -183,17 +183,17 @@ System.out.println("Would you like to note it down in your notebook?");
 String room1g = keyboard.nextLine();
 
 if ("yes".equalsIgnoreCase(room1g) || "y".equalsIgnoreCase(room1g)) {
-notebook[NoteSize] = "Code: chingchongmingmong"
+notebook[NoteSize] = "Code: chingchongmingmong";
 NoteSize++;
 System.out.println("The note 'Code: chingchongmingmong' has been stored in your notebook.");
-location = "dead end1"
+location = "dead end1";
 } else if ("no".equalsIgnoreCase(room1g) || "n".equalsIgnoreCase(room1g)) {
-location = "dead end1"
+location = "dead end1";
 }
 
 } else if ("go back".equalsIgnoreCase(room1) || "back".equalsIgnoreCase(room1)) {
 System.out.println("You are going towards room #2. That is just another empty wating room.");
-location = "room 2"
+location = "room 2";
 }
 
 }
@@ -222,7 +222,7 @@ System.out.println("Nothing is there.");
 System.out.println("Nothing is there.");
 } else if ("go back".equalsIgnoreCase(room2) || "back".equalsIgnoreCase(room2)) {
 System.out.println("You are going back to room 1.");
-location = "room 1"
+location = "room 1";
 }
 
 break;
@@ -244,16 +244,16 @@ inventory();
 
 if ("go left".equalsIgnoreCase(deadend) || "left".equalsIgnoreCase(deadend)) {
 System.out.println("Nothing is there.");
-location = "dead end1"
+location = "dead end1";
 } else if ("go right".equalsIgnoreCase(deadend) || "right".equalsIgnoreCase(deadend)) {
 System.out.println("Nothing is there.");
-location = "dead end1"
+location = "dead end1";
 } else if ("go forward".equalsIgnoreCase(deadend) || "forward".equalsIgnoreCase(deadend)) {
 System.out.println("Nothing is there.");
-location = "dead end1"
+location = "dead end1";
 } else if ("go back".equalsIgnoreCase(deadend) || "back".equalsIgnoreCase(deadend)) {
 System.out.println("You are going back to room 1.");
-location = "room 1"
+location = "room 1";
 }
 
 }
@@ -332,7 +332,7 @@ System.out.println("");
 System.out.println("Congratulations " + name + "." + " You have defeated the nurse. What a great accomplisment.");
 System.out.println("You are now entering level 2!");
 
-location = "lab1"
+location = "lab1";
 
 } else if (enemyhp > 0 && playerhp <= 0) {
 System.out.println("You have died. You will now have to restart the game.");
@@ -383,10 +383,10 @@ inventory();
 
 if ("yes".equalsIgnoreCase(lab1)) {
 System.out.println("You have put on the nurse's clothing.");
-location = "lab2g"
+location = "lab2g";
 } else if ("no".equalsIgnoreCase(lab1)) {
 System.out.println("You might be in danger!");
-location = "lab2b"
+location = "lab2b";
 }
 
 }
@@ -421,14 +421,14 @@ System.out.println("Would you like to store it?");
 String lab2g2 = keyboard.nextLine();
 if ("yes".equalsIgnoreCase(lab2g2)) {
 System.out.println("The injection needle has been added to your inventory.");
-inventory[invSize] = "Injection needle"
+inventory[invSize] = "Injection needle";
 invSize++;
 System.out.println("Where would you like to go next?");
 System.out.println("You probably want to visit all the locations before you proceed.");
 System.out.println("Once you have visited all the places in the lab, type 'next location'.");
 } else if ("no".equalsIgnoreCase(lab2g1)) {
 System.out.println("Where would you like to go next?");
-location = "lab2g"
+location = "lab2g";
 }
 }
 } else if ("go left".equalsIgnoreCase(lab2g)) {
@@ -444,10 +444,10 @@ System.out.println("You have logged into the computer.");
 System.out.println("One file in the computer says that test tube A has ethanol in it.");
 System.out.println("This will be added to your inventory.");
 
-notebook[NoteSize] = "You found ethanol in test tube A"
+notebook[NoteSize] = "You found ethanol in test tube A";
 NoteSize++;
 
-inventory[invSize] = "ethanol"
+inventory[invSize] = "ethanol";
 invSize++;
 
 System.out.println("You found one of the four acids! You still have to find more.");
@@ -482,10 +482,10 @@ if ("yes".equalsIgnoreCase(lab2g1) || "y".equalsIgnoreCase(lab2g1)) {
 System.out.println("You have identified that the element is hydrogen.");
 System.out.println("You now have hydrogen in your inventory.");
 
-notebook[NoteSize] = "You found hydrogen in the blue sink"
+notebook[NoteSize] = "You found hydrogen in the blue sink";
 NoteSize++;
 
-inventory[invSize] = "hydrogen"
+inventory[invSize] = "hydrogen";
 invSize++;
 
 System.out.println("You found one of the four acids! You still have to find more.");
@@ -498,11 +498,11 @@ System.out.println("Once you have visited all the places in the lab, type 'next 
 }
 } else if ("go back".equalsIgnoreCase(lab2g) || "back".equalsIgnoreCase(lab2g)) {
 System.out.println("You are going back to the entrance of the laboratory.");
-location = "lab1"
+location = "lab1";
 }
 if ("next location".equalsIgnoreCase(lab2g)) {
 System.out.println("You are heading out of the laboratory and heading to waiting room 1.");
-location = "wroom1"
+location = "wroom1";
 }
 }
 break;
@@ -522,7 +522,7 @@ System.out.println(" ▄ ▄ \n"
 + "▐░▌ ▐░▌\n"
 + " ▀ ▀ \n"
 + " ");
-location = ""
+location = "";
 break;
 
 case "wroom1":
@@ -549,20 +549,20 @@ String w2room1 = keyboard.nextLine();
 
 System.out.println("Would you like to store it");
 
-notebook[NoteSize] = "You found nitric acid in the green cabinet."
+notebook[NoteSize] = "You found nitric acid in the green cabinet.";
 NoteSize++;
 
-inventory[invSize] = "nitric acid"
+inventory[invSize] = "nitric acid";
 invSize++;
 
 if ("yes".equalsIgnoreCase(w2room1) || "y".equalsIgnoreCase(w2room1)) {
 System.out.println("A bottle of nitric acid has been stored in your inventory.");
 System.out.println("You found one of the four acids! You still need to find one more");
 } else if ("no".equalsIgnoreCase(w2room1) || "n".equalsIgnoreCase(w2room1)) {
-location = "bhallway3"
+location = "bhallway3";
 }
 } else if ("no".equalsIgnoreCase(wroom1) || "n".equalsIgnoreCase(wroom1)) {
-location = "bhallway3"
+location = "bhallway3";
 }
 }
 break;
@@ -635,7 +635,7 @@ System.out.println("");
 System.out.println("Congratulations " + name + "." + " You have defeated another nurse. You have so many skills!");
 System.out.println("You are now entering level 3!");
 
-location = "hallway3"
+location = "hallway3";
 
 } else if (enemyhp > 0 && playerhp <= 0) {
 System.out.println("You have died. You will now have to restart the game.");
@@ -675,7 +675,7 @@ inventory();
 }
 if ("go forward".equalsIgnoreCase(hallway3) || "forward".equalsIgnoreCase(hallway3)) {
 System.out.println("There are a lot of waiting rooms beside you, but a dead end if you keep going.");
-location = "dead end2"
+location = "dead end2";
 } else if ("go left".equalsIgnoreCase(hallway3) || "left".equalsIgnoreCase(hallway3)) {
 System.out.println("You headed to waiting room 2. You see a bottle of acid attatched to the wall.");
 System.out.println("Would you like to determine what acid it is?");
@@ -687,21 +687,21 @@ System.out.println("You have identified that the element is flourine.");
 System.out.println("You now have flourine in your inventory.");
 System.out.println("You have found the last acid. Now you are going to mix the right two acids.");
 
-notebook[NoteSize] = "You found flourine in the blue sink"
+notebook[NoteSize] = "You found flourine in the blue sink";
 NoteSize++;
 
-inventory[invSize] = "flourine"
+inventory[invSize] = "flourine";
 invSize++;
 
-location = "mix"
+location = "mix";
 } else if ("no".equalsIgnoreCase(hallway3g) || "n".equalsIgnoreCase(hallway3g)) {
 System.out.println("You have exited waiting room 2 and you are now in the entrance of hallway 3.");
-location = "hallway 3"
+location = "hallway 3";
 }
 } else if ("go right".equalsIgnoreCase(hallway3) || "right".equalsIgnoreCase(hallway3)) {
 System.out.println("There is a security guard right there. He is not paying attention.");
 System.out.println("You keep walking forward till a dead end.");
-location = "dead end2"
+location = "dead end2";
 } else if ("go back".equalsIgnoreCase(hallway3) || "back".equalsIgnoreCase(hallway3)) {
 System.out.println("A security guard catches you as you turn back.");
 System.out.println("You will now have to restart the game.");
@@ -740,18 +740,18 @@ inventory();
 
 if ("go left".equalsIgnoreCase(deadend2) || "left".equalsIgnoreCase(deadend2)) {
 System.out.println("Nothing is there.");
-location = "dead end2"
+location = "dead end2";
 } else if ("go right".equalsIgnoreCase(deadend2) || "right".equalsIgnoreCase(deadend2)) {
 System.out.println("Nothing is there.");
-location = "dead end2"
+location = "dead end2";
 } else if ("go forward".equalsIgnoreCase(deadend2) || "forward".equalsIgnoreCase(deadend2)) {
 System.out.println("Nothing is there.");
-location = "dead end2"
+location = "dead end2";
 } else if ("go back".equalsIgnoreCase(deadend2) || "back".equalsIgnoreCase(deadend2)) {
 System.out.println("You realize that you have little time left to escape the hospital.");
 System.out.println("As you try to go in the waiting room to escape, there is a security guard right outside the waiting room.");
 System.out.println("He is your last enemy. If you defeat him, you will successfully escape the hospital.");
-location = "outwr"
+location = "outwr";
 }
 
 }
